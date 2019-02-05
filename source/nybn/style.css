@@ -325,10 +325,6 @@ p{
 a{
 	color:#FF1C00!important;
 }
-.img-style{
-	width:1600px;
-	height:1067px;
-}
 .nav > li > .dropdown a{
 	background-color:#000000;
 	font-family:"Montserrat";
@@ -338,6 +334,12 @@ a{
 	background-color:#000000;
 	font-family:"Montserrat";
 	color:#FFFFFF!important;
+}
+.img-style{
+	height:95px;
+	display:block;
+	margin:35% 35% 35% 35%;
+	padding:0px 0px 0px 0px;
 }
 
 /* = Colour
@@ -431,7 +433,10 @@ a{
 }
 
 @media (max-width: 991px){
-	 }
+	.img-style{
+	width:630px;
+}
+ }
 
 @media (max-width: 767px){
 	 }
@@ -439,6 +444,11 @@ a{
 @media (max-width: 575px){
 	.footer-link{
 	text-align:center;
+}
+.img-style{
+	width:630px;
+	height:45px;
+	margin:50% 50% 50% 50%;
 }
  }
 
