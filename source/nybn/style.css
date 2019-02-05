@@ -48,36 +48,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding:20px 50px;
 }
 
-/* = Full Screen Blocs 
--------------------------------------------------------------- */
-
-.bloc-fill-screen{
-	min-height:100vh;
-	display: flex;
-	flex-direction: column;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-.bloc-fill-screen > .container{
-	align-self: flex-middle;
-	flex-grow: 1;
-	display: flex;
-}
-.bloc-fill-screen > .container > .row{
-	flex-grow: 1;
-	align-self: center;
-	width:100%;
-}
-.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
-	flex-grow: 0;
-}
-.bloc-fill-screen .fill-bloc-top-edge{
-	align-self: flex-start;
-}
-.bloc-fill-screen .fill-bloc-bottom-edge{
-	align-self: flex-end;
-}
-
 /* = Full Width Blocs 
 -------------------------------------------------------------- */
 
@@ -335,11 +305,10 @@ a{
 	font-family:"Montserrat";
 	color:#FFFFFF!important;
 }
-.img-style{
-	height:95px;
-	display:block;
-	margin:35% 35% 35% 35%;
-	padding:0px 0px 0px 0px;
+.img-bg-ov-style{
+	width:400px;
+	height:60px;
+	margin:30% 30% 30% 30%;
 }
 
 /* = Colour
@@ -433,10 +402,7 @@ a{
 }
 
 @media (max-width: 991px){
-	.img-style{
-	width:630px;
-}
- }
+	 }
 
 @media (max-width: 767px){
 	 }
@@ -445,10 +411,9 @@ a{
 	.footer-link{
 	text-align:center;
 }
-.img-style{
-	width:630px;
-	height:45px;
-	margin:50% 50% 50% 50%;
+.img-bg-ov-style{
+	max-width:90%;
+	margin:30% 30% 30% 30%;
 }
  }
 
