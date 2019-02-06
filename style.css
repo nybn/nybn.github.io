@@ -31,7 +31,7 @@ a:hover{text-decoration: none; cursor:pointer;}
 	-o-background-size: cover;
 	background-size: cover;
 	position:relative;
-	display:inline-block;
+	display:flex;
 }
 .bloc .container{
 	padding-left:0;
@@ -62,6 +62,37 @@ a:hover{text-decoration: none; cursor:pointer;}
 .full-width-bloc .carousel img{
 	width:100%;
 	height:auto;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+
+
+/* Video Background Styles */
+
+.video-bg-container, .bloc-video{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	right: -50%;
+	overflow: hidden;
+	transform: translateX(-50%);
+	-webkit-transform:translateX(-50%);
+}
+.bloc-video, .video-bg-container iframe{
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 0;
 }
 
 
@@ -308,7 +339,7 @@ a{
 .img-bg-ov-style{
 	width:400px;
 	height:60px;
-	margin:30% 30% 30% 30%;
+	margin:25% 25% 25% 25%;
 }
 
 /* = Colour
@@ -400,20 +431,14 @@ a{
 	   height: 320px;
     }
 }
-
-@media (max-width: 991px){
-	 }
-
-@media (max-width: 767px){
-	 }
-
 @media (max-width: 575px){
 	.footer-link{
-	text-align:center;
+		text-align:center;
+	}
+	.img-bg-ov-style{
+		max-width:90%;
+		margin:30% 30% 30% 30%;
+	}
+	
 }
-.img-bg-ov-style{
-	max-width:90%;
-	margin:30% 30% 30% 30%;
-}
- }
 
