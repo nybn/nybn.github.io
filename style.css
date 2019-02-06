@@ -341,6 +341,9 @@ a{
 	height:60px;
 	margin:25% 25% 25% 25%;
 }
+.ny-video-overlay{
+	opacity:0.2;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -356,9 +359,6 @@ a{
 
 /* Bloc image backgrounds */
 
-.bg-bg{
-	background-image:url("img/bg.jpg");
-}
 
 
 
